@@ -1,0 +1,97 @@
+/* Interview Prep Grid Layout */
+.interview-prep-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+}
+@media (min-width: 768px) {
+	.interview-prep-grid {
+		grid-template-columns: 1fr 1fr;
+		gap: 2.5rem;
+	}
+}
+/* Interview Preparation Module Styles */
+/* Compact and responsive interview prep container */
+#interview-prep-container {
+	padding: 1rem 0.5rem;
+	background: linear-gradient(90deg, #f8fafc 60%, #e0f2fe 100%);
+	border-radius: 0.75rem;
+	box-shadow: 0 2px 8px 0 rgba(60, 60, 120, 0.08);
+	max-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+/* Compact and responsive question card */
+.question-card {
+	border: 1px solid #e5e7eb;
+	box-shadow: 0 1px 4px 0 rgba(60, 60, 120, 0.07);
+	margin-bottom: 0.75rem;
+	border-radius: 0.5rem;
+	background: #fff;
+	transition: box-shadow 0.2s;
+	width: 100%;
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.question-card:hover {
+	box-shadow: 0 2px 12px 0 rgba(60, 60, 120, 0.12);
+}
+.question-card .font-bold {
+	font-size: 1rem;
+	color: #2563eb;
+}
+.reasoning {
+	font-size: 0.9rem;
+	font-style: italic;
+	border-left: 3px solid #059669;
+	padding-left: 0.75rem;
+	color: #374151;
+	background: #f0fdf4;
+	margin-top: 0.3rem;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Interview Questions Feature Styles */
+#interview-questions-container {
+	padding: 2rem 1rem;
+	background: linear-gradient(90deg, #f8fafc 60%, #e0f2fe 100%);
+	border-radius: 1rem;
+	box-shadow: 0 2px 16px 0 rgba(60, 60, 120, 0.08);
+	max-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.question-card {
+	border: 1px solid #e5e7eb;
+	box-shadow: 0 1px 6px 0 rgba(60, 60, 120, 0.07);
+	margin-bottom: 1rem;
+	border-radius: 0.75rem;
+	background: #fff;
+	transition: box-shadow 0.2s;
+	width: 100%;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.question-card:hover {
+	box-shadow: 0 4px 24px 0 rgba(60, 60, 120, 0.12);
+}
+
+.question-card .font-bold {
+	font-size: 1.1rem;
+	color: #2563eb;
+}
+
+.reasoning {
+	font-size: 0.95rem;
+	font-style: italic;
+	border-left: 4px solid #059669;
+	padding-left: 1rem;
+	color: #374151;
+	background: #f0fdf4;
+	margin-top: 0.5rem;
+}
